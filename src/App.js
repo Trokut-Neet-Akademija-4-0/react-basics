@@ -6,6 +6,7 @@ import ClassComponentGreeting from './components/Day2/ClassComponentGreetinng'
 import FunctionComponentGreeting from './components/Day2/FunctionComponentGreeting'
 import ConstantFunctionGreeting from './components/Day2/ConstantFunctionGreeting'
 import { Day3Component } from './components/Day3/Day3Component'
+import { Day4Component } from './components/Day4/Day4Component'
 import { PropComponent } from './components/Day3/PropComponent'
 
 // FUNCTION APP
@@ -31,6 +32,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Day3Component />
+        <Day4Component />
       </header>
     </div>
   );

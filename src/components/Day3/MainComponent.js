@@ -2,11 +2,12 @@ import './MainComponent.scss'
 import { SidebarComponent } from './SidebarComponent'
 import { ArticleComponent } from './ArticleComponent'
 
-function MainComponent () {
+function MainComponent (props) {
+  const description = props.description;
   return (
     <div className={'main-container'} >
       <SidebarComponent />
-      <ArticleComponent />
+      <ArticleComponent content={description} />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function StatesExample() {
+function StatesExampleOriginal() {
 
   const [greeting, setGreeting] = useState('Hello Guest');
 
