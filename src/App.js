@@ -30,26 +30,6 @@ function App() {
     <div className="App-2">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/*<h2>{stringElement}</h2>*/}
-        {/*{jsxElement}*/}
-        {/*{jsxVariableEl}*/}
-        {/*{jsxFunctionEl}*/}
-        {/*<ClassComponentGreeting />*/}
-        {/*<FunctionComponentGreeting />*/}
-        {/*<FunctionComponentGreeting />*/}
-        {/*<FunctionComponentGreeting />*/}
-        {/*<ConstantFunctionGreeting />*/}
-        {/*<MyGoal />*/}
-        <PropComponent
-          title={'Title from props'}
-          subtitle={'Some subtitle'}
-          username={'duplich'}
-        />
-        <PropComponent
-        title={"This is another title"}
-        subtitle={"Subtitle 2"}
-        username={"mishovil"}
-        />
         <Day3Component />
       </header>
     </div>
