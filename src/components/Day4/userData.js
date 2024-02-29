@@ -1,6 +1,6 @@
 export const userData = {
-  name: 'jasmina',
+  name: 'Jasmin',
   lastName: "Causevic",
   role: 'Developer',
-  imageUrl: 'https://i.imgur.com/Mx7dA2Y.jpg',
+  imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9G6CbHoM5faZ1eczcV9t6MfhHqfR27LMefg',
 };
