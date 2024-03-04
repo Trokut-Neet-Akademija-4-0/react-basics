@@ -1,16 +1,18 @@
 // Constant Functions ConstantFunctionGreeting
 import './ConstantFunctionGreeting.css'
+import './stylingSASS.scss'
 const ConstantFunctionGreeting = () => {
   const validation = false;
 
-  // Dynamic Class
+  //  Dynamic initial Class
   let customClass = "heading";
+
   if(validation === true){
-    customClass = "heading-orange";
+    customClass += " blue";
   }
 
   return (
-    <h3 className={customClass}> Greeting from Constant Function Component</h3>
+    <h3 className={customClass}> Dynamic Color Greeting from Constant Function Component</h3>
   );
 }
 

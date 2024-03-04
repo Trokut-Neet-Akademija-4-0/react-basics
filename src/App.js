@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react'
-import MyGoal from './  components/Day2/MyGoal'
-import ClassComponentGreeting from './  components/Day2/ClassComponentGreetinng'
-import FunctionComponentGreeting from './  components/Day2/FunctionComponentGreeting'
-import ConstantFunctionGreeting from './  components/Day2/ConstantFunctionGreeting'
+import MyGoal from './components/Day2/MyGoal'
+import ClassComponentGreeting from './components/Day2/ClassComponentGreetinng'
+import FunctionComponentGreeting from './components/Day2/FunctionComponentGreeting'
+import ConstantFunctionGreeting from './components/Day2/ConstantFunctionGreeting'
+import { Day3Component } from './components/Day3/Day3Component'
+import { Day4Component } from './components/Day4/Day4Component'
+import { PropComponent } from './components/Day3/PropComponent'
 
 // FUNCTION APP
 function App() {
@@ -23,33 +26,13 @@ function App() {
 
   const jsxFunctionEl = <h2>Hello {fullName()}</h2>;
 
-
   // END OF BUSINESS LOGIC
   return (
     <div className="App-2">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>{stringElement}</h2>
-        {jsxElement}
-        {jsxVariableEl}
-        {jsxFunctionEl}
-        <ClassComponentGreeting />
-        <FunctionComponentGreeting />
-        <FunctionComponentGreeting />
-        <FunctionComponentGreeting />
-        <ConstantFunctionGreeting />
-        <MyGoal />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Day3Component />
+        <Day4Component />
       </header>
     </div>
   );
