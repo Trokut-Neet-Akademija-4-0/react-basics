@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const buttonStyle = {
   padding: 10,
-  backgroundColor: "orange",
+  backgroundColor: "blue",
   color: "white",
   borderRadius: 4,
   marginRight: 10,
