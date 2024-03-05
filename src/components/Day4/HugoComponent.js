@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { userData } from './userData'
 
-function StateExampleComponent(){
+function HugoComponent(){
   // START BUSINESS LOGIC
   console.log("user data ==>", userData);
   const initialGreeting = "Hello guest";
@@ -55,4 +55,4 @@ function StateExampleComponent(){
   )
 }
 
-export { StateExampleComponent }
+export { HugoComponent }
