@@ -3,6 +3,7 @@
  */
 import { useEffect, useState } from 'react'
 import { slidesList } from './slideshowData'
+import './Slideshow.scss'
 
 
 function Slideshow (){
@@ -35,12 +36,19 @@ function Slideshow (){
   }, [sliderIndex]);
 
   return(
-      <>
+      <div className={'slideshow-wrapper'}>
         <h1>Slideshow</h1>
-        <img src={currentSlide.url} alt={currentSlide.alt}/>
-        <button onClick={()=> setSliderIndex(sliderIndex - 1)}> Previous Slide</button>
-        <button onClick={()=> sliderIndex < slidesList.length - 1  && setSliderIndex(sliderIndex + 1)}> Next Slide</button>
-      </>
+        <div className="img-wrapper">
+          <button className={'prev'} onClick={()=>sliderIndex > 0 && setSliderIndex(sliderIndex - 1)}> ← </button>
+          <img src={currentSlide.url} alt={currentSlide.alt}/>
+          <button className={'next'} onClick={()=> sliderIndex < slidesList.length - 1  && setSliderIndex(sliderIndex + 1)}> → </button>
+        </div>
+        <div className={'ticks'}>
+          {slidesList.map((item, index) =>
+              <span className={index === sliderIndex && 'active'} onClick={() => setSliderIndex(index)}></span>
+          )}
+        </div>
+      </div>
   )
 }
 
