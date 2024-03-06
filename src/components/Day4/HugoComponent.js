@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { userData } from './userData'
 
-function StateExampleComponent(){
+function HugoComponent(){
   // START BUSINESS LOGIC
   console.log("user data ==>", userData);
   const initialGreeting = "Hello guest";
@@ -47,12 +47,13 @@ function StateExampleComponent(){
 // END BUSINESS LOGIC
   return (
     <div style={{textAlign: 'center'}}>
-      <h3>{greeting} {count} times</h3>
-      <img style={imageStyle} src={user.imageUrl} /> <br/><br/>
+      <h3>{greeting}</h3>
+      <h4>{count} times</h4>
+      <img alt={'user image url'} style={imageStyle} src={user.imageUrl} /> <br/><br/>
       <button style={buttonStyle} onClick={() => handleGreeting()}>Greet me</button>
       <button style={buttonStyle} onClick={() => handleCounter()}>Count</button>
     </div>
   )
 }
 
-export { StateExampleComponent }
+export { HugoComponent }
