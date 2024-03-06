@@ -9,6 +9,7 @@ import { Day3Component } from './components/Day3/Day3Component'
 import { BlogComponent } from './components/Day4/BlogComponent'
 import { PropComponent } from './components/Day3/PropComponent'
 import { Slideshow } from './components/Slideshow/Slideshow'
+import { TodoList } from './components/TodoList/TodoList'
 
 // FUNCTION APP
 function App() {
@@ -22,8 +23,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         {/*<Day3Component />*/}
         {/*  here is a place for your <Slideshow /> component*/}
-        <Slideshow someProp={'someValue'} />
-        <BlogComponent />
+        {/*<Slideshow someProp={'someValue'} />*/}
+        {/*<BlogComponent />*/}
+        <TodoList />
+
       </header>
     </div>
   );
