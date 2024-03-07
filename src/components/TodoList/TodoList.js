@@ -52,6 +52,7 @@ function TodoList() {
     const newElement = { name: currentAddNewValue};
     // filteredTODOS.push(newElement) <==== THIS IS HOW NOT TO UPDATE STATE
     setFilteredTODOS([...filteredTODOS, newElement]); // STATE CAN BE UPDATED ONLY through his setter
+    todos.push(newElement);
     console.log("new todos array looks like =>>>", filteredTODOS);
   }
 
